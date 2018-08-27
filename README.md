@@ -1,2 +1,2 @@
 # footballdata.github.io
-football data
+football player data 
