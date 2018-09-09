@@ -120,7 +120,7 @@ div.tab table {
 }
 
 div.tab th, div.tab table {
-    border-bottom: solid #d0d0d0 1px;
+    border-bottom: solid #d0d0d0 10px;
 }
 
 div.tab th {
@@ -138,6 +138,7 @@ div.tab td {
     padding-left: 6em;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: #111111;
 }
 
 div.tab td:first-child {
