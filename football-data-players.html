@@ -16,7 +16,7 @@
       header {
       background-color: transparent !important;
       }
-      td {
+      td, button {
       background-color: #ffffff;
       color: black;
       }
@@ -34,10 +34,8 @@
    <header>
    <h1>Football Data</h1>
    <div class="entry-content">
-      <pre class="wp-code-highlight prettyprint prettyprinted" style="margin:">
-   <span class="typ">Barcelona</span>
-</pre>
-      <table border="0">
+      <button onclick="barcelonaFunction()">Barcelona</button>
+      <table border="0" id="barcelonaID">
          <tbody>
             <tr>
                <td style="background-color:#000000;vertical-align:top;" width="48%">
@@ -194,6 +192,16 @@
             </tr>
          </tbody>
       </table>
+      <script>
+function barcelonaFunction() {
+    var x = document.getElementById("barcelonaID");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
       <pre class="wp-code-highlight prettyprint prettyprinted" style=""><span class="typ">Real Madrid</span></pre>
       <table border="0">
          <tbody>
