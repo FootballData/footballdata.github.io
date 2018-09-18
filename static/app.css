@@ -234,12 +234,21 @@ img {
 }
 
 
-      .btn img {  
-    display: inline-block;
-    vertical-align: middle;
-    background: #000;
+      .btn {
+    background: #fff;
+    border:3px solid grey;
     padding: 5px;
-    border-radius: 5px;
+    width: 200px;
+    text-align:left;
+}
+#btn_container img {
+    border: 6px solid red;
+    margin-right: 5px;    
+    vertical-align: middle;
+}
+.btn-txt {
+    vertical-align: middle;
+}
 
 
       th,td {
