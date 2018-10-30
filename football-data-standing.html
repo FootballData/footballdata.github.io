@@ -1,0 +1,157 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Football Data</title>
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700" type="text/css">
+      <meta name="theme-color" content="#111111">
+      <style type="text/css">
+         body {
+         font-family: Arial;
+         }
+         .img {
+         border="0" width="46" height="32"
+         }
+         /* Style the tab */
+         .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #f1f1f1;
+         color: black;
+         }
+         /* Style the buttons inside the tab */
+         .tab button {
+         background-color: inherit;
+         float: left;
+         border: none;
+         outline: none;
+         color: black;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+         }
+         /* Change background color of buttons on hover */
+         .tab button:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         /* Create an active/current tablink class */
+         .tab button.active {
+         background-color: #ccc;
+         color: black;
+         }
+         /* Style the tab content */
+         .tabcontent {
+         display: none;
+         padding: 6px 12px;
+         border: 1px solid #ccc;
+         border-top: none;
+         }
+         .boxhead a {
+         color: #FFFFFF;
+         text-decoration: none;
+         }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <meta name="og:type" content="website">
+      <meta name="og:title" content="FootballData.github.io">
+      <meta name="og:description" content="Football Data, you can see all information about football, players...">
+      <meta name="og:site_name" content="Football Data">
+      <meta name="og:url" content="{{ site.url }}">
+   </head>
+   <body>
+      <header>
+      <div class="container">
+         <h1><a href="index.html">Football Data</a></h1>
+         <ul class="nav nav-tabs list-inline">
+            <li class="active"><a data-toggle="tab" href="#a">Group A</a></li>
+            <li><a data-toggle="tab" href="#b">OCT 2018</a></li>
+            <li><a data-toggle="tab" href="#notReady">NOV 2018</a></li>
+            <li><a data-toggle="tab" href="#notReady">DEC 2018</a></li>
+            <li><a data-toggle="tab" href="#notReady">FEB 2019</a></li>
+            <li><a data-toggle="tab" href="#notReady">MAR 2019</a></li>
+            <li><a data-toggle="tab" href="#notReady">APR 2019</a></li>
+            <li><a data-toggle="tab" href="#notReady">MAY 2019</a></li>
+            <li><a data-toggle="tab" href="#notReady">JUN 2019</a></li>
+         </ul>
+         <div class="tab-content">
+            <div id="a" class="tab-pane fade in active">
+               <table style="width:100%">
+                  <tr>
+                     <td style="width:50%"></td>
+                     <td style="width:10%">P</td>
+                     <td style="width:10%">W</td>
+                     <td style="width:10%">D</td>
+                     <td style="width:10%">L</td>
+                     <td style="width:10%">Pts</td>
+                  <tr>
+                     <td>Borussia Dortmund</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>0</td>
+                     <td>9</td>
+                  </tr>
+               </table>
+            </div>
+            <div id="b" class="tab-pane fade">
+               <table style="width:100%">
+                  <tr>
+                     <td style="width:50%"></td>
+                     <td style="width:10%">P</td>
+                     <td style="width:10%">W</td>
+                     <td style="width:10%">D</td>
+                     <td style="width:10%">L</td>
+                     <td style="width:10%">Pts</td>
+                  <tr>
+                     <td>Borussia Dortmund</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>0</td>
+                     <td>9</td>
+                  </tr>
+               </table>
+            </div>
+            <div id="notReady" class="tab-pane fade">
+               <h3>Football Data</h3>
+               <p>This page is not ready, we are building it</p>
+            </div>
+         </div>
+         <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+         </script>
+      </div>
+      <script>
+         (function(i, s, o, g, r, a, m) {
+             i['GoogleAnalyticsObject'] = r;
+             i[r] = i[r] || function() {
+                 (i[r].q = i[r].q || []).push(arguments)
+             }, i[r].l = 1 * new Date();
+             a = s.createElement(o),
+                 m = s.getElementsByTagName(o)[0];
+             a.async = 1;
+             a.src = g;
+             m.parentNode.insertBefore(a, m)
+         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+         ga('create', 'UA-3637749-19', 'FootballData.github.io');
+         ga('send', 'pageview');
+      </script>
+   </body>
+</html>
