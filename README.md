@@ -1,7 +1,7 @@
 # footballdata.github.io
 
 
-football player data, you can see all information about champions league, football, players and much more.
+football player data, you can see all information about champions league, matches, videos, players and much more.
 
 
 <a href="https://footballdata.github.io/">football data</a>
